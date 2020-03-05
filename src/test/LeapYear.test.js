@@ -28,4 +28,20 @@ describe('LeapYear Component', () => {
         expect(label).toBe('Leap year');
     });
 
+    it('should display not leap year output, if user input divisible by 100 but not by 400', () => {
+        let input = wrapper.find('input');
+        input.simulate('change', {target: {value: 1700}});
+
+        const label = wrapper.find('label').text(); 
+        expect(label).toBe('Not a Leap year');
+    });
+
+    it('should display leap year output, if user input divisible by 100 and 400', () => {
+        let input = wrapper.find('input');
+        input.simulate('change', {target: {value: 2000}});
+
+        const label = wrapper.find('label').text(); 
+        expect(label).toBe('Leap year');
+    });
+
 });
