@@ -60,4 +60,12 @@ describe('LeapYear Component', () => {
         expect(label).toBe('Leap year');
     });
 
+    it('should return please enter valid year output, if 123 is passed', () => {
+        let input = wrapper.find('input');
+        input.simulate('change', {target: {value: 123}});
+    
+        const label = wrapper.find('label').text(); 
+        expect(label).toBe('Plese enter valid year');
+      });
+
 });
