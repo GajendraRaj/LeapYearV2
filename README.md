@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# LeapYear
+This short and simple Kata performed using Test Driven Development
+
+User Story:
+
+As a user, I want to know if a year is leap year, So that I can plan for an Feburary 29th during those years.
+
+Acceptance Criteria:
+
+All years divisible by 400 ARE leap year (so, for example, 2000 was indeed a leap year),
+All years divisible by 100 but not by 400 are not leap year (so, for example, 1700, 1800, and 1900 were not leap year, NOR will 2100 be a leap year),
+All years divisible by 4 but not by 100 ARE leap year (e.g., 2008, 2012, 2016),
+All years not divisible by 4 but are NOT leap year (e.g., 2017, 2018, 2019).
+
 ## Available Scripts
 
 In the project directory, you can run:
